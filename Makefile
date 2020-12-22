@@ -1,5 +1,5 @@
-LIBS=-lpcre -lcrypto -lm -lpthread
-CFLAGS=-std=c99 -ggdb -O3 -Wall -march=native
+LIBS=-lpcre -lm -lpthread -lcrypto
+CFLAGS=-std=c99 -ggdb -O3 -Wall -march=native -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib
 OBJS=vanitygen.o oclvanitygen.o oclvanityminer.o oclengine.o keyconv.o pattern.o util.o rmd160.o sha256.o custom_ec_bn.o json.o segwit_addr.o
 #PROGS=vanitygen keyconv oclvanitygen oclvanityminer
 PROGS=vanitygen 
